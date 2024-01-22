@@ -1,15 +1,17 @@
-.slider {
-/*  -webkit-appearance: none;*/
+/* Custom slider style */
+
+/*.slider {
+  -webkit-appearance: nonze;
   width: 100%;
-/*  border-radius: 5px;  */
-/*  background: #d3d3d3;*/
-/*  outline: none;*/
-/*  opacity: 0.7;*/
-/*  -webkit-transition: .2s;*/
-/*  transition: opacity .2s;*/
+  border-radius: 5px;  
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
 }
 
-./*slider::-webkit-slider-thumb {
+.slider::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
   width: 25px;
@@ -26,3 +28,9 @@
   background: #04AA6D;
   cursor: pointer;
 }*/
+
+/* Using default slider style */
+
+.slider {
+  width: 100%;
+}
