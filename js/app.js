@@ -9,12 +9,15 @@ var s_result = document.getElementById("s_result");
 
 // Function to validate the altitude, simple but can be scalable if security issues rise
 const validateAltitude = alt => {
-    parsedAlt = parseFloat(alt);
-    if (parsedAlt > 80) {
-      return 80;
+  if (alt !== "") {
+    if (!isNaN(alt) && alt <= 80.0) {
+      return alt;
     } else {
-      return parsedAlt;
+      return 0;
     }
+  } else {
+    return "";
+  }
 }
 
 // Write results to the output fields
@@ -27,23 +30,19 @@ const updateResults = result => {
 
 // Get information from slider or text and update both accordingly
 altitudeSlider.oninput = function() {
-  if (this.value !== "") {
-    let h = validateAltitude(this.value);
-    this.value = h;
-    altitudeText.value = h;
+  let h = validateAltitude(this.value);
+  this.value = h;
+  altitudeText.value = h;
 
-    let result = getResult(h);
-    updateResults(result);
-  }
+  let result = getResult(h);
+  updateResults(result);
 }
 
 altitudeText.oninput = function() {
-  if (this.value !== "") {
-    let h = validateAltitude(this.value);
-    this.value = h;
-    altitudeSlider.value = h;
+  let h = validateAltitude(this.value);
+  this.value = h;
+  altitudeSlider.value = parseFloat(h);
 
-    let result = getResult(h);
-    updateResults(result);
-  }
+  let result = getResult(h);
+  updateResults(result);
 }
