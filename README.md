@@ -23,6 +23,6 @@
 7. The project owner merges or closes the Pull Request
 8. Sync the updated master back to your fork
 
-## Happy Flying!
+## Keep The Blue Side Up!
 
 ---
