@@ -2,7 +2,7 @@
 
 ---
 
-* This project was made as an exercise for the course [AE1110x: Introduction to Aeronautical Engineering](https://learning.edx.org/course/course-v1:DelftX+AE1110x+2T2023/home) provided by the online learning platform by [Delft University of Technology](https://www.tudelft.nl/en/). It was made using only basic HTML and vanilla Javascript & Bootstrap framework for CSS, and the web application can be accessed [her](https://mohamedosama1998.github.io/ISAcalculator/)
+* This project was made as an exercise for the course [AE1110x: Introduction to Aeronautical Engineering](https://learning.edx.org/course/course-v1:DelftX+AE1110x+2T2023/home) provided by the online learning platform by [Delft University of Technology](https://www.tudelft.nl/en/). It was made using only basic HTML and vanilla Javascript & Bootstrap framework for CSS, and the web application can be accessed from [here](https://mohamedosama1998.github.io/ISAcalculator/)
 
 * This project is by no means complete! new features can be added, I'll provide some of the changes that I or even YOU can make! the following can be implemented:
 1. Allow the user to control the pressure, density or even temperature instead of the altitude
